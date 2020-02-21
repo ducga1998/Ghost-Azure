@@ -2,12 +2,13 @@
     "database": {
         "client": "mysql",
         "connection": {
-            "host"     : "127.0.0.1",
-            "user"     : "root",
-            "password" : "",
-            "database" : "ghost"
+          "host": "ghostmysqlforduc.mysql.database.azure.com",
+          "port": 3306,
+          "user": "duc2820@ghostmysqlforduc",
+          "password": "chunga2820@",
+          "database": "ghost"
         }
-    },
+      },
     "paths": {
         "contentPath": "content/"
     },
