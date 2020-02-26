@@ -22,6 +22,7 @@
   "main": "./core/index",
   "scripts": {
     "start": "node index",
+    "production": "NODE_ENV=production node index",
     "dev": "DEBUG=ghost:* grunt dev",
     "test": "grunt validate",
     "ci": "grunt validate --verbose",
@@ -35,7 +36,7 @@
     "fixmodulenotdefined": "yarn cache clean && cd core/client && rm -rf node_modules tmp dist && yarn && cd ../../"
   },
   "engines": {
-    "node": "^8.16.0 || ^10.13.0 || ^12.10.0",
+    "node": "^10.16.3 || ^12.10.0",
     "cli": "^1.12.0"
   },
   "dependencies": {
@@ -79,7 +80,7 @@
     "extract-zip": "1.6.7",
     "fs-extra": "8.1.0",
     "ghost-azure-storage": "^2.0.0",
-    "ghost-ignition": "4.0.0",
+    "ghost-ignition": "^4.1.0",
     "ghost-storage-base": "0.0.3",
     "glob": "7.1.6",
     "got": "9.6.0",
